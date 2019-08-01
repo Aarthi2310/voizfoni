@@ -1,0 +1,112 @@
+
+<head>
+        <title>Bootstrap Example</title>
+        <style>
+            #box1{
+                max-width:400px;
+                margin:100px;
+                border : 1px solid;
+                padding: 5px;
+                box-shadow: 10px 10px 10px 10px #131212;
+            }
+            .bg {
+               
+             width:1120px;
+              margin-left: 115px;
+               height: 100%; 
+             padding-top:70px;
+             padding-left: 250px;
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+             }
+        </style>
+        </head>
+        
+            
+            <div class="bg">
+                <div class="row" id="box1">
+                    
+                    <div class="col-md-12">
+                          
+                        <form name="loginForm" class="j-forms login" (ngSubmit)="loginf(f)" #f="ngForm" autocomplete="off" role="form" novalidate>                      <h1 style="text-align: center">LOG IN</h1>
+                            <label><h2>Email ID</h2></label><br>
+                    
+                      
+                            <input type="text" placeholder="Enter Your Email Address" name="user_email" [(ngModel)]="user_email" #email="ngModel" class="form-control"
+                              email required>
+                              <br>
+                              
+                            <div *ngIf="(f.submitted || (email.dirty || email.touched)) && email.invalid ">
+                              <div *ngIf="email.errors.required" class="error-block">
+                                      Email is required!
+                                  </div>
+                                  <div *ngIf="email.errors.email && !email.errors.required" class="error-block">
+                                    <h6>Please enter the valid email ID</h6>
+                                  </div>
+                                
+                          </div>
+                            <div class="form-group">
+                                  <label for="exampleInputPassword"><h2>Password</h2></label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" #password="ngModel" name="user_password" [(ngModel)]="user_password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,}" password required>
+                              </div>
+                              <div *ngIf="!password.valid && (password.dirty || password.touched)" class="error-block">
+                                  <div *ngIf="password.errors.required" class="error-block">
+                                      Password is required!
+                                  </div>
+                                <h6>Your password must be over 8 characters and include an unppercase letter,a number and a special character</h6>
+                              </div>
+
+                                  
+                                  <div class="checkbox">
+                                      <label><input type="checkbox"><h5>Remember me</h5></label>
+                                  </div>
+                                  <br>
+                              <a routerLink='/signup'><h5>Create an account</h5></a>
+                                  <div style="text-align: right">
+                                  <button type="submit" class="btn btn-info" [disabled]="!f.valid" routerLink="/profile"><h5>Log in</h5></button></div>
+      
+                             
+                            </form>
+                </div>
+               </div>
+            </div>
+
+            <div class="container-fluid" style="background-color: darkslategray;color:white; height:170px">
+              <div class="col-md-1">
+              </div>
+              <div class="col-md-3">
+                <h1>Address</h1>
+                <h3>No.19,Hamster street,<br>
+                Kilpauk,<br>
+                Chennai-46.</h3>
+              </div>
+              <div class="col-md-1">
+                </div>
+              <div class="col-md-3">
+                <h1>We Offer</h1>
+                          <a href="/prepaidoffers"><h3 style="color:white">Prepaid offers</h3></a>
+                <a href="/postpaidoffers"><h3 style="color:white">Postpaid offers</h3></a>
+                <a href="/dongleoffers"><h3 style="color:white">Dongle services</h3></a>
+              </div>
+              <div class="col-md-1">
+                </div>
+              <div class="col-md-3">
+                <h1>Connect with us</h1>
+                <h3>
+                <span class="glyphicon glyphicon-envelope"></span>&nbsp;
+                <span class="glyphicon glyphicon-earphone"></span> </h3>  
+                <br>
+                <br><br>
+                      </div><br><br>
+                      <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <h2 style="text-align: center;">&copy;Copyrights reserved with Voizfonica</h2>     
+            </div>
+            
+      
+        
+        
+      
+      
+      
