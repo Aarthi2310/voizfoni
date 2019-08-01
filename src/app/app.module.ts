@@ -20,7 +20,8 @@ import { InternettariffComponent } from './internettariff/internettariff.compone
 import { DongleoffersComponent } from './dongleoffers/dongleoffers.component';
 import { CurrentbalanceComponent } from './currentbalance/currentbalance.component';
 import { AddmoneywalletComponent } from './addmoneywallet/addmoneywallet.component';
-import { TransactionComponent } from './transaction/transaction.component'
+import { TransactionComponent } from './transaction/transaction.component';
+import { SupportComponent } from './support/support.component'
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { TransactionComponent } from './transaction/transaction.component'
     DongleoffersComponent,
     CurrentbalanceComponent,
     AddmoneywalletComponent,
-    TransactionComponent
+    TransactionComponent,
+    SupportComponent
   ],
   imports: [
     BrowserModule,

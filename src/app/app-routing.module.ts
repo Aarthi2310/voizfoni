@@ -17,8 +17,8 @@ import { PaybillsComponent } from './paybills/paybills.component';
 import { PrepaidoffersComponent } from './prepaidoffers/prepaidoffers.component';
 import { PostpaidoffersComponent } from './postpaidoffers/postpaidoffers.component';
 import { DongleoffersComponent } from './dongleoffers/dongleoffers.component';
-import { TransactionComponent } from './transaction/transaction.component'
-
+import { TransactionComponent } from './transaction/transaction.component';
+import { SupportComponent } from './support/support.component';
 
 const routes: Routes = [{path:'recharge', component:RechargeComponent},
 {path:'tariff', component:TariffComponent},
@@ -38,7 +38,8 @@ const routes: Routes = [{path:'recharge', component:RechargeComponent},
 {path:'transactionhistory',component:TransactionhistoryComponent},
 {path:'addmoneywallet',component:AddmoneywalletComponent},
 {path:'paybills',component:PaybillsComponent},
-{path:'transaction',component:TransactionComponent}
+{path:'transaction',component:TransactionComponent},
+{path:'support',component:SupportComponent}
 ];
 
 @NgModule({
