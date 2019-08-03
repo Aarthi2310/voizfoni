@@ -1,9 +1,13 @@
+
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+<head>
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</head>
 <div class="container">
-    <div class="col-md-10">
-        <h2 style="text-align: center"><b></b></h2>
-    </div>
-    <div class="col-md-2">
-        <button type="button" class="btn btn-success" routerLink='/profile'><h4>BACK</h4></button>
+    <div class="col-md-12">
+        <button type="button" class="btn btn-success" routerLink='/profile' style="float:right;width:90px"><h4>BACK</h4></button>
     </div>
 </div>
 <br>
@@ -11,7 +15,7 @@
     <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-            <h2 style="text-align: center">Have any Questions?</h2>
+            <h2 style="text-align: center">How do I contact customer care?</h2>
             <br><br>
             <h3 style="text-align: center"><i>You can ask below or enter what you are looking for..</i></h3>
             <br><br>
@@ -22,10 +26,138 @@
             <div class="col-md-3"></div>
             <div class="col-md-5">
                     <div class="form-group">
-                            <input class="form-control input-lg" id="inputlg" type="text" placeholder="Type your queries here">
+                            <input class="form-control input-lg" style="height:35px;font-size:8pt" id="inputlg" type="text" placeholder="Type your queries here">
                           </div>
             </div>
-            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <button type="button" style="height:35px;width:100px;font-size:11pt" class="btn btn-success">Search</button>
+            </div>
         </div>
-        <br><br>
     </div>
+    <h3 style="text-align: center">Frequently Asked Questions</h3>
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link" style="font-size:15pt" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                How do I contact customer care?
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" style="font-size:15pt" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+               I want to view my current bill
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" style="font-size:15pt" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                I want to change my bill plan
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" style="font-size:15pt" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  I want to know about my current package
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" style="font-size:15pt" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  I want to know the details of my last 3 transactions
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingSix">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" style="font-size:15pt" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  I want to know about voizfonica wallet
+                </button>
+              </h2>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+      </div>
+      <br>
+      <div class="container-fluid" style=" background: #24c6dc;background: -webkit-linear-gradient(to right, #24c6dc, #514a9d);background: linear-gradient(to right, #24c6dc, #514a9d);height:170px">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-3">
+            <h1>Address</h1>
+            <h3>No.19,Hamster street,<br> Kilpauk,
+                <br> Chennai-46.
+            </h3>
+        </div>
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-3">
+            <h1>We Offer</h1>
+            <a href="/prepaidoffers">
+                <h3 style="color:white">Prepaid offers</h3>
+            </a>
+            <a href="/postpaidoffers">
+                <h3 style="color:white">Postpaid offers</h3>
+            </a>
+            <a href="/dongleoffers">
+                <h3 style="color:white">Dongle services</h3>
+            </a>
+        </div>
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-3">
+            <h1>Connect with us</h1>
+            <h3>
+                <span class="glyphicon glyphicon-envelope"></span>&nbsp;
+                <span class="glyphicon glyphicon-earphone"></span> </h3>
+            <br>
+            <br><br>
+        </div><br><br>
+        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <h2 style="text-align: center;">&copy;Copyrights reserved with Voizfonica</h2>
+    </div>
+      
+      
